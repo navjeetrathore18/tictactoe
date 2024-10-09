@@ -26,10 +26,37 @@ public class Game {
 
     }
 
-        public static Builder builder()
+    public GameState getGameState() {
+        return gameState;
+    }
+
+    public void setGameState(GameState gameState) {
+        this.gameState = gameState;
+    }
+
+    public List<Player> getPlayers() {
+        return players;
+    }
+
+    public void setPlayers(List<Player> players) {
+        this.players = players;
+    }
+
+    public Board getBoard() {
+        return board;
+    }
+
+    public void setBoard(Board board) {
+        this.board = board;
+    }
+
+    public static Builder builder()
         {
             return new Builder();
         }
+
+
+
 
     public static class Builder{
         private int size;
