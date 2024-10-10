@@ -25,7 +25,7 @@ public class GameService {
        game.setGameState(GameState.IN_PROGRESS);
        List<Player> players = game.getPlayers();
         Collections.shuffle(players);
-        game.setPlayers(players);
+       
         return game;
     }
 
